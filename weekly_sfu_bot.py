@@ -165,9 +165,7 @@ _______________________________________
 
 #[All Discussion Threads Index (Google Docs)](https://docs.google.com/spreadsheets/d/1YPx-qMpIVkpZktaMosTkNICgxG9wiWby_YhPBYhEp0w/edit?usp=sharing)
 
-||
-|:-:|
-|^bot-script ^by ^/u/f1uk3r|'''.format(str(season), episodeFinal, episodeName,credit, synopsis, obituary,hboEpisodeUrl, imdbEpisodeUrl,wikipediaSeasonUrl,traktEpisodeUrl,avclubEpisodeUrl,diggingSfuEpisodeUrl,hboGoUrl,amazonUrl,airDate,fishercastContainerUrl)
+^^bot-script ^^by ^^/u/f1uk3r'''.format(str(season), episodeFinal, episodeName,credit, synopsis, obituary,hboEpisodeUrl, imdbEpisodeUrl,wikipediaSeasonUrl,traktEpisodeUrl,avclubEpisodeUrl,diggingSfuEpisodeUrl,hboGoUrl,amazonUrl,airDate,fishercastContainerUrl)
 
 #print(body)
 #title of the post
