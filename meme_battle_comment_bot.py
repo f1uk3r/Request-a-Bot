@@ -16,7 +16,7 @@ count = 0
 
 while True:
   for submission in reddit.subreddit('PeterPorky').new(limit=10): # increase limit number upto 1000 to run the script for more threads in new
-    if submission.domain == "i.imgur.com":
+    if submission.domain == "i.imgur.com" or submission.domain == "imgur.com":
       if re.search(r'.\w+', submission.url):
         if submission.comments:
           first_comment = submission.comments[0]
@@ -24,6 +24,11 @@ while True:
             imgurCode = re.search(r'https?://i.imgur.com/(\w+.\w+)', submission.url).group(1)
             comment = submission.reply(baseUrl + imgurCode)
             comment.mod.distinguish(how="yes", sticky=True)
+        else:
+          imgurCode = re.search(r'https?://i.imgur.com/(\w+.\w+)', submission.url).group(1)
+          comment = submission.reply(baseUrl + imgurCode)
+          comment.mod.distinguish(how="yes", sticky=True)
+
   time.sleep(60) #sleep code for 60 seconds
   count += 1
   print(count)
